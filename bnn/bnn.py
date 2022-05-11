@@ -48,7 +48,7 @@ if os.environ['BOARD'] == 'Ultra96':
 elif os.environ['BOARD'] == 'Pynq-Z1' or os.environ['BOARD'] == 'Pynq-Z2':
 	PLATFORM="pynqZ1-Z2"
 else:
-	raise RuntimeError("Board not supported")
+	print("VISS")
 
 BNN_ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 BNN_LIB_DIR = os.path.join(BNN_ROOT_DIR, 'libraries', PLATFORM)
